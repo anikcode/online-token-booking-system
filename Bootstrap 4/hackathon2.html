@@ -1,0 +1,383 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="hackathon2.css">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
+    </head>
+    <body>
+
+
+<!-- Join Queue -->
+<div class="modal fade" id="getToken" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enter Your Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="hack_logo.png" class="img-fluid modal-img">
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-sm-12">
+                    <form class="coolWrapperForm">
+                        <div class="form-group">
+                            <label for="forName">What's your name?</label>
+                            <input type="text" class="form-control" id="emailInput" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="forName">Where should we send notificaion?</label>
+                            <input type="email" class="form-control" id="passwordInput" placeholder="Mobile Number">
+                        </div>
+                       </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      <div class="modal-footer">
+       <a href="file:///C:/Users/hp/Desktop/hack/notification.html"><button type="button" class="btn btn-danger red-button">GET TOKEN</button></a>
+      </div>
+    </div>
+  </div>
+</div>      
+</div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="header-logo">
+                    <img src="hack_logo.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="header">
+                    <h2>Salons Near You</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid sectionLight">
+            <div class="row">
+                <div class="col-sm-12"></div>
+            </div>
+            <div class="row row-1">
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image1.jpg">
+                            <h4 class="name-heading">Ali Barber Unisex Salon</h4>
+                            <p class="address-para">Address : Law Gate Road, Phagwara,  Punjab 144411,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image10.jpg">
+                            <h4 class="name-heading">Lakme Salon</h4>
+                            <p class="address-para">Address : Krishna Tower,Guru Hargobind Nagar, Phagwara, Punjab 144401,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image12.jpg">
+                            <h4 class="name-heading">Malik Hair Salon</h4>
+                            <p class="address-para">Address : Near sachi point,Kapurthala, Punjab 144411,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image4.jpg">
+                            <h4 class="name-heading">VLCC</h4>
+                            <p class="address-para">Address : Hargobind Singh Nagar, Phagwara, Punjab 144401,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+
+        <div class="row row-1">
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image6.jpg">
+                            <h4 class="name-heading">London Salon 11</h4>
+                            <p class="address-para">Address : Civil Hospital Road, Chahal Nagar, Phagwara, Punjab 144401,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image7.jpg">
+                            <h4 class="name-heading">Toni&Guy essensuals</h4>
+                            <p class="address-para">Address : 75, Cool Road, Near, Gurjepal Nagar, Jalandhar, Punjab 144001,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image5.jpg">
+                            <h4 class="name-heading">KMZ Hair And Tattoos Lounge</h4>
+                            <p class="address-para">Address :  Old Phagwara Rd, Jalandhar Cantt, Jalandhar, Punjab 144005,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image8.jpg">
+                            <h4 class="name-heading">Ribbons & Pearls</h4>
+                            <p class="address-para">Address : B.O 34, Guru Hargobind Nagar, Phagwara, Punjab 144401,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+
+        <div class="row row-1">
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image9.jpg">
+                            <h4 class="name-heading">Strands Lounge</h4>
+                            <p class="address-para">Address : Hotel Country Inn Jalandhar, Jalandhar, Punjab 144005,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image2.jpg">
+                            <h4 class="name-heading">Diffrent Look</h4>
+                            <p class="address-para">Address : Opposite Bus Stand, Phagwara, Punjab 144001,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image11.jpg">
+                            <h4 class="name-heading">Kenchi Hair Salon</h4>
+                            <p class="address-para">Address :lovely professional university, Kapurthala, Punjab 144411,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image3.jpg">
+                            <h4 class="name-heading">Manga Hair Salon</h4>
+                            <p class="address-para">Address : Mehat hair salon ,phagwara, Punjab 144402,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+
+        <div class="row row-1">
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image13.jpg">
+                            <h4 class="name-heading">Aura Collection & Beauty Salon</h4>
+                            <p class="address-para">Address :  21/ 42,, Sadar Bazar, Jalandhar Cantt, Punjab 144005,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image14.jpg">
+                            <h4 class="name-heading">M7 Salon For Men</h4>
+                            <p class="address-para">Address : Mehnga Singh Colony,Jalandhar Cantt, Punjab 144005,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/image15.jpg">
+                            <h4 class="name-heading">British Hairways Salon</h4>
+                            <p class="address-para">Address : 3, Street Number, GTB Nagar, Phagwara, Punjab 144401,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-3 box">
+                    <div class="box-content">
+                            <img class="img-fluid imgLight" src="img/sal.jpg">
+                            <h4 class="name-heading">Imperio Unisex Salon And Academy</h4>
+                            <p class="address-para">Address : Near inox theater Kapurthala, Punjab 144411,India</p>
+                        <div class="row join-queue">
+                        <div class="col-sm-12 col-lg-6 col-md-7">
+                            <p class="para-1">2 persons in queue</p>
+                            <p class="para-2">waiting time : 30 mins</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-md-5 btn-join">
+                            <button type="button" class="btn btn-danger buttonCenter" data-toggle="modal" data-target="#getToken">Join Queue</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+        
+        <!-- <div class="footer bg-inverse">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <img class="img-fluid footerImage" src="img/KFS_LIGHT.png">
+                </div>
+                <div class="col-sm-12 col-lg-5 favIcon">
+                    <a href="http://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook-square fa-3x"></i>
+                    </a>
+                    <a href="http://www.googleplus.com" target="_blank">
+                        <i class="fab fa-google-plus-square fa-3x"></i>
+                    </a>
+                    <a href="http://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-lg-4 developer">
+                    <p>Created and Designed by :<a href="https://www.facebook.com/profile.php?id=100004308693042" target="_blank"> Nayab Anwar</a></p>
+                </div>
+            </div>
+        </div>  -->
+        
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

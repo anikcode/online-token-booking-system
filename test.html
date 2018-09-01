@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Online Token System</title>
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+       
+
+        <!-- Owl Carousel -->
+        <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+        <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+        <!-- Font Awesome Icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- Custom stlylesheet -->
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<style >
+
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.submit
+{
+    margin-left: 250px;
+}
+
+/* Set a style for all buttons */
+li {
+    
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 15px;
+   
+}
+li:hover {
+    opacity: 0.8;
+    color: orange;
+}
+/*button
+{
+    width: 100px;
+    height:50px;
+    background-color: rgba(255, 102, 0,0.8);
+    margin-left: 300px;
+    color: white;
+
+
+}*/
+button {
+    background-color: rgba(255, 102, 0,0.8);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    opacity: 0.9;
+    margin-left: 300px;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+/* The Modal (background) */
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-after {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+    padding-bottom: 30px;
+}
+.modal-content-after {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+.container-get{
+    width: 500px;
+
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container-make{
+    padding: 16px;
+    width: 500px;
+
+}
+
+/* The Modal (background) */
+
+
+/* Modal Content/Box */
+
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close-after {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close-after:hover,
+.close-after:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.clearfix button
+{
+     margin-left: 180px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.signupbtn {
+       width: 100px;
+       margin-left: 40px;
+    }
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 5px;
+    border: none;
+    background: #f1f1f1;
+    margin-left: 10px;
+    border: 1px solid orange;
+}
+
+input.uname,input.psw{
+    margin-left: 8%;
+}
+label
+{
+    margin-left: 10px;
+}
+img
+{
+    margin-left: 200px;
+}
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+</style>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+
+            <!-- Bottom nav -->
+            <div id="bottom-nav">
+                <div class="container">
+                <nav id="nav">
+                    
+                    <!-- nav -->
+                    <ul class="main-nav nav navbar-nav">
+                        <img src="hack_logo.png">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#menu" >Notification</a></li>
+                       
+                    </ul>
+                    <!-- /nav -->
+
+                    <!-- contact nav -->
+                    <ul class="contact-nav nav navbar-nav">
+          <li onclick="document.getElementById('modal-wrapper').style.display='block'" style="float: left; " ><i class="fas fa-sign-in-alt"></i> Login</li>
+           <li onclick="document.getElementById('id01').style.display='block'" style="float: left; "><i class="fas fa-user-plus"></i> Register</li>
+            
+          <div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="1.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center">LOGIN </h1>
+    </div>
+
+    <div class="container-get">
+      <input type="text" placeholder="Enter Username" class="uname" name="uname"><br>
+      <input type="password" placeholder="Enter Password" class="psw" name="psw"><br>        
+      <button type="submit" class="submit">Login</button><br>
+      <a href="#" style="text-decoration:none;  margin-left:235px; margin-top:26px; color: blue;">Forgot Password ?</a>
+    </div>
+    
+  </form>
+  
+</div>
+<div id="id01" class="modal-after">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close-after" title="Close Modal">&times;</span>
+  <form class="modal-content-after" action="/action_page.php">
+    <div class="container-make">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+        </ul>
+                    <!-- contact nav -->
+
+                </nav>
+                </div>
+            </div>
+            <!-- /Bottom nav -->
+            </header>
+        <!-- /Header -->
+         <!-- Home -->
+        <div id="home" class="banner-area">
+
+            <!-- Backgound Image -->
+            <div class="bg-image bg-parallax overlay" style="background-image:url(./img/we.jpeg)"></div>
+            <!-- /Backgound Image -->
+
+            <div class="home-wrapper">
+
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <div class="home-content">
+                        <h1 class="white-text">Welcome To Online Token Booking System</h1>
+                        <h4 class="white-text lead">Why To Stand In Queue While You Get Your Destination Token Here.Take Care Of The Minutes And Hours Will Take Care Of Themselves</h4>
+                           <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-12">
+                                        <select class="categories">
+                                            <option>Categories</option>
+                                            <option>Saloon</option>
+                                            <option>Hospital</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-xs-12">
+                                        <a href="file:///C:/Users/hp/Desktop/hack/Bootstrap%204/hackathon2.html"><button class="main-button">Get Token</button></a>
+                                    </div>
+                                </div>
+                           </div>
+                </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /Home -->
+
+        <!-- About -->
+        <div id="about" class="section">
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- row -->
+                <div class="row">
+
+                    <!-- section header -->
+                    <div class="section-header text-center">
+                        <h4 class="sub-title">About Us</h4>
+                        <h2 class="title">The Token Vendor</h2>
+                    </div>
+                    <!-- /section header -->
+
+                    <!-- about content -->
+                    <div class="col-md-5">
+                        <h4 class="lead">Welcome to Online Token Booking System. Since 2018, Offering a Convient Way To Book Token Online.</h4>
+                    </div>
+                    <!-- /about content -->
+
+                    <!-- about content -->
+                    <div class="col-md-7">
+                        <p>It is a queue management system that best integrates appointment and walk-in customer queues to avoid hours of waiting It manages your dynamically changing waiting lines to ensure disciplined and guided customer experience</p>
+                    </div>
+                    <!-- /about content -->
+
+                    <!-- Gallery Slider -->
+                    <div class="col-md-12">
+                        <div id="Gallery" class="owl-carousel owl-theme">
+
+                            <!-- single column -->
+                            <div class="Gallery-item">
+
+                                <!-- single image -->
+                                <div class="Gallery-img" style="background-image:url(./img/p2.jpeg)"></div>
+                                <!-- /single image -->
+
+                            </div>
+                            <!-- single column -->
+
+                            <!-- single column -->
+                            <div class="Gallery-item">
+
+                                <!-- single image -->
+                                <div class="Gallery-img" style="background-image:url(./img/p1.jpg)"></div>
+                                <!-- /single image -->
+
+                                <!-- single image -->
+                                <div class="Gallery-img" style="background-image:url(./img/p3.jpeg)"></div>
+                                <!-- /single image -->
+
+                            </div>
+                            <!-- single column -->
+
+                            <!-- single column -->
+                            <div class="Gallery-item">
+
+                                <div class="item-column">
+                                    <!-- single image -->
+                                    <div class="Gallery-img" style="background-image:url(./img/p4.jpeg)"></div>
+                                    <!-- /single image -->
+
+                                    <!-- single image -->
+                                    <div class="Gallery-img" style="background-image:url(./img/sal.jpg)"></div>
+                                    <!-- /single image -->
+                                </div>
+
+                                <div class="item-column">
+                                    <!-- single image -->
+                                    <div class="Gallery-img" style="background-image:url(./img/off.jpg)"></div>
+                                    <!-- /single image -->
+
+                                    <!-- single image -->
+                                    <div class="Gallery-img" style="background-image:url(./img/pex.jpeg)"></div>
+                                    <!-- /single image -->
+                                </div>
+
+                            </div>
+                            <!-- /single column -->
+
+                        </div>
+                    </div>
+                    <!-- /Gallery Slider -->
+
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /container -->
+
+        </div>
+        <!-- /About -->
+        <!-- Footer -->
+        <footer id="footer">
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- row -->
+                <div class="row">
+
+                    <!-- copyright -->
+                    <div class="col-md-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <span class="copyright">onlinetokensystem.com<a href="https://colorlib.com" target="_blank"> By Legendrox</a></span>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                    <!-- /copyright -->
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /container -->
+
+        </footer>
+        <!-- /Footer -->
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="preloader">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- /Preloader -->
+
+        <!-- jQuery Plugins -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        <script type="text/javascript" src="js/google-map.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,71 @@
+.main
+{
+  background: url(C:\Users\hp\Desktop\hack\off.jpg);
+  background-size: cover;
+}
+body
+{
+  background-color: #F8F9FA;
+}
+
+.top-search
+{
+  margin: auto;
+  padding-top: 2%;
+}
+.top-search input
+{
+  height: 6rem;
+  border-radius: 30px;
+  padding-left: 8%;
+}
+.top-search button
+{
+  border-radius: 30px;
+  height: 6rem;
+}
+
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+.Copyright
+{
+  text-align: center
+}
+.links
+{
+  float: left;
+  list-style: none;
+}
+h3
+{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 1px 1px 0;
+}
+footer p
+{
+  text-align: center;
+}
+footer
+{
+  background-color: #333B50;
+  color: #FFFFFF;
+}
